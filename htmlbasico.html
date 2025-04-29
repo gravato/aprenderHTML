@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Texto</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+
+</style>
+<body>
+    <header class="banner">
+        <h1>Sistemas de Informação</h1>
+        <p>Aprender HTML (HyperText Markup Language)</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="htmlbasico.html">HTML <small>texto</small></a></li>
+            <li><a href="imagem.html">HTML <small>imagem</small></a></li>
+            <li><a href="hiperligacoes.html">HTML <small>hiperligações</small></a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="cabecalhos">
+            <h2>Elementos para títulos e subtítulos</h2>
+            </h1>
+            <article>
+                <header>
+                    <h3>h1, h2, h3, h4, h5, e h6</h3>
+                </header>
+                <pre><code>
+<b>código</b>
+&lt;h1>Título principal&lt;/h1>
+&lt;h2>Subtítulo h2&lt;/h2>
+&lt;h3>Subtítulo h3&lt;/h3>
+&lt;h4>Subtítulo h4&lt;/h4>
+&lt;h5>Subtítulo h5&lt;/h5>
+&lt;h6>Subtítulo h6&lt;/h6>
+                </code></pre>
+
+                <div class="output">
+                    <h1>Título Principal</h1>
+                    <h2>Subtítulo h2</h2>
+                    <h3>Subtítulo h3</h3>
+                    <h4>Subtítulo h4</h4>
+                    <h5>Subtítulo h5</h5>
+                    <h6>Subtítulo h6</h6>
+                </div>
+
+            </article>
+        </section>
+
+        <!--Formatação de textos-->
+        <section id="formatacaotextos">
+            <h2>Formatação de texto</h2>
+            </h1>
+            <article>
+                <header>
+                    <h3>Parágrafos e quebras de linha</h3>
+                </header>
+                <pre><code>
+<b>código</b>
+&lt;p>Os parágrafos têm, por defeito, Display Block, ou seja, o próximo elemento vai ficar na linha abaixo&lt;/p>
+&lt;p>As quebra de linha no código não se 
+    aplicam à visualização&lt;/p>
+&lt;p>Para mudar de linha podemos utilizar o código &lt;br> Assim o texto continua na linha seguinte&lt;/p>
+                </code></pre>
+
+                <div class="output">
+                    <p>Os parágrafos têm, por defeito, Display Block, ou seja, o próximo elemento vai ficar na linha abaixo</p>
+                    <p>As quebras de linha no código não se 
+                        aplicam à visualização</p>
+                    <p>Para mudar de linha podemos utilizar o código. <br>Assim o texto continua na linha seguinte</p>
+                </div>
+
+            </article>
+            <article>
+                <header>
+                    <h3>Elementos de formatação inline</h3>
+                </header>
+                <pre><code>
+<b>código</b>
+&lt;p>Texto em &lt;b>negrito&lt;/b>. Texto &lt;u>sublinhado&lt;/u>. Texto em &lt;i>itálico&lt;/i>&lt;/p>
+&lt;p>Texto &lt;sup>superior à linha&lt;/sup>. Texto &lt;sub>inferior à linha&lt;/sub>&lt;/p>
+&lt;p>Texto &lt;del>rasurado&lt;/del>. Texto &lt;small>pequeno&lt;/small>.&lt;/p>
+                </code></pre>
+
+                <div class="output">
+                    <p>Texto em <b>negrito</b>. Texto <u>sublinhado</u>. Texto em <i>itálico</i></p>
+                    <p>Texto <sup>superior à linha</sup>. Texto <sub>inferior à linha</sub></p>
+                    <p>Texto <del>rasurado</del>. Texto <small>pequeno</small>.</p>
+            </article>
+        </section>
+
+        <!--Listas-->
+        <section id="listas">
+            <h2>Lista numeradas e não numeradas</h2>
+            </h1>
+            <article>
+                <header>
+                    <h3>Lista numeradas</h3>
+                </header>
+                <pre><code>
+<b>código</b>
+&lt;ol>
+    &lt;li>Análise do problema&lt;/li>
+    &lt;li>Resolução Algoritmica&lt;/li>
+    &lt;li>Codificação&lt;/li>
+&lt;/ol>
+                </code></pre>
+
+                <div class="output">
+                    <ol>
+                        <li>Análise do problema</li>
+                        <li>Resolução Algoritmica</li>
+                        <li>Codificação</li>
+                    </ol>
+                </div>
+
+            </article>
+            <article>
+                <header>
+                    <h3>Listas não numeradas</h3>
+                </header>
+                <pre><code>
+<b>código</b>
+&lt;ul>
+    &lt;li>item 1&lt;/li>
+    &lt;li>item 2&lt;/li>
+    &lt;li>item 3&lt;/li>
+&lt;/ul>
+                </code></pre>
+
+                <div class="output">
+                    <ul style="padding-left: 30px;">
+                        <li>item 1</li>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <!--Tabelas-->
+        <section id="tabelas">
+            <h2>Tabelas</h2>
+            </h1>
+            <article>
+                <header>
+                    <h3>Simples</h3>
+                </header>
+                <pre><code>
+<b>código</b>
+&lt;table>
+    &lt;tr>&lt;th>Notas&lt;/th>&lt;th>Mat&lt;/th>&lt;th>Port&lt;/th>&lt;th>TIC&lt;/th>&lt;/tr>
+    &lt;tr>&lt;td>1ºP&lt;/td>&lt;td>15&lt;/td>&lt;td>16&lt;/td>&lt;td>18&lt;/td>&lt;/tr>
+    &lt;tr>&lt;td>2ºP&lt;/td>&lt;td>15&lt;/td>&lt;td>17&lt;/td>&lt;td>19&lt;/td>&lt;/tr>
+    &lt;tr>&lt;td>3ºP&lt;/td>&lt;td>16&lt;/td>&lt;td>17&lt;/td>&lt;td>19&lt;/td>&lt;/tr>
+&lt;/table>
+                </code></pre>
+
+                <div class="output">
+                    <table>
+                        <tr><th>Notas</th><th>Mat</th><th>Port</th><th>TIC</th></tr>
+                        <tr><td>1ºP</td><td>15</td><td>16</td><td>18</td></tr>
+                        <tr><td>2ºP</td><td>15</td><td>17</td><td>19</td></tr>
+                        <tr><td>3ºP</td><td>16</td><td>17</td><td>19</td></tr>
+                    </table>
+                </div>
+
+            </article>
+            <article>
+                <header>
+                    <h3>Colspan</h3>
+                </header>
+                <pre><code>
+<b>código</b>
+&lt;table>
+    &lt;tr>&lt;th colspan="2">2024-2025&lt;/th>&lt;/tr>
+    &lt;tr>&lt;td>1ºP&lt;/td>&lt;td>15&lt;/td>&lt;/tr>
+    &lt;tr>&lt;td>2ºP&lt;/td>&lt;td>15&lt;/td>&lt;/tr>
+    &lt;tr>&lt;td>3ºP&lt;/td>&lt;td>16&lt;/td>&lt;/tr>
+&lt;/table>
+                </code></pre>
+
+                <div class="output">
+                    <table>
+                        <tr><th colspan="2">2024-2025</th></tr>
+                        <tr><td>1ºP</td><td>15</td></tr>
+                        <tr><td>2ºP</td><td>15</td></tr>
+                        <tr><td>3ºP</td><td>16</td></tr>
+                    </table>
+                </div>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Rowspan</h3>
+                </header>
+                <pre><code>
+<b>código</b>
+&lt;table>
+    &lt;tr>&lt;th colspan="2">2024-2025&lt;/th>&lt;/tr>
+    &lt;tr>&lt;td rowspan="3">TIC&lt;/td>&lt;td>15&lt;/td>&lt;/tr>
+    &lt;tr>&lt;td>15&lt;/td>&lt;/tr>
+    &lt;tr>&lt;td>16&lt;/td>&lt;/tr>
+</table>
+                </code></pre>
+
+                <div class="output">
+                    <table>
+                        <tr><th colspan="2">2024-2025</th></tr>
+                        <tr><td rowspan="3">TIC</td><td>15</td></tr>
+                        <tr><td>15</td></tr>
+                        <tr><td>16</td></tr>
+                    </table>
+                </div>
+            </article>
+        </section>
+
+
+    </main>
+    <aside>
+        <h2>Temas</h2>
+        <div class="menu">
+            <a href="#cabecalhos">Cabeçalhos</a>
+            <a href="#formatacaotextos">Formatação de texto</a>
+            <a href="#listas">Listas</a>
+            <a href="#tabelas">Tabelas</a>
+        </div>
+    </aside>
+    <footer>
+        <p>Criado por: Fernão Gravato</p>
+        <p>Contacto: <a href="mailto: gravato.f@gmail.com">gravato.f@gmail.com</a></p>
+    </footer>
+</body>
+</html>

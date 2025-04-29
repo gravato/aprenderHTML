@@ -1,0 +1,143 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+article, aside, footer, header, main, nav, section{
+    display:block;
+}
+
+body, html, h1, h3, ul, li, a, p, article, aside, footer, header, main, nav, section{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-size: 32px;
+}
+
+.banner{
+    background-color: #1d1d3d;
+    color: white;
+    padding: 30px 20px;
+}
+
+body{
+    width: 1024px;
+    margin: 0 auto;
+    background-color:azure;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+nav{
+    background-color: #20416c;
+    margin-top: 1px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+nav li{
+    float: left;
+  }
+  
+nav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+  
+nav li a:hover{
+    background-color: yellowgreen;
+    color: black;
+}
+
+section{
+    background-color: #bbbbbb;
+    padding: 5px;
+    margin-top: 10px;
+}
+article{
+    background-color: white;
+    margin-top: 15px;
+    padding:10px 15px;
+}
+
+main{
+    width: 770px;
+    float: left;
+    margin-bottom: 10px;
+}
+aside{
+    background-color: #bbbbbb;
+    width: 200px;
+    float: right;
+    padding: 20px;
+    margin-top: 10px;
+}
+footer{
+    clear: both;
+    background-color: #1d1d3d;
+    color:white;
+    padding: 30px 20px;
+}
+footer a{
+    color: lightgray;
+}
+
+pre {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 15px;
+    overflow-x: auto;
+}
+code {
+    font-family: "Courier New", monospace;
+}
+
+.output{
+    background-color: #dee3d3;
+    border: 1px solid #ccc;
+    padding: 15px;
+    overflow-x: auto;
+}
+
+.menu {
+    position:fixed;
+    width: 180px;
+    background-color: #333;
+    padding: 0;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+}
+
+.menu a:hover {
+    background-color: #575757;
+}
+
+.menu a.active {
+    background-color: #04AA6D;
+}
+
+table, th,td{
+    text-align: center;
+    border: 1px dotted white;
+    border-collapse: collapse;
+}
+
+table{
+    width: 200px;
+}

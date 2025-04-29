@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Hiperligações</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+
+</style>
+<body>
+    <header class="banner">
+        <h1>Sistemas de Informação</h1>
+        <p>Aprender HTML (HyperText Markup Language)</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="htmlbasico.html">HTML <small>texto</small></a></li>
+            <li><a href="imagem.html">HTML <small>imagem</small></a></li>
+            <li><a href="hiperligacoes.html">HTML <small>hiperligações</small></a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Hiperligações</h2>
+            </h1>
+            <article id="saltos">
+                <header>
+                    <h3>Internas à página</h3>
+                </header>
+                <pre><code>
+<b>código</b>
+&lt;a href="#rodape">Secção da página cujo id="rodape"&lt;/a>
+                </code></pre>
+
+                <div class="output">
+                    <a href="#rodape">Secção da página cujo id="rodape"</a>
+                </div>
+            </article>
+
+            <article id="internas">
+                <header>
+                    <h3>Internas ao website</h3>
+                </header>
+                <pre><code>
+<b>código</b>
+&lt;a href="index.html">Página Inicial&lt;/a>
+
+                </code></pre>
+
+                <div class="output">
+                    <a href="index.html">Página Inicial</a>
+                </div>
+
+            </article>
+
+            <article>
+                <header id="externas">
+                    <h3>Externas - devem abrir em novo separador</h3>
+                </header>
+                <pre><code>
+<b>código</b>
+&lt;a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML&lt;/a>
+
+                </code></pre>
+
+                <div class="output">
+                    <a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML</a>
+                </div>
+
+            </article>
+            <article id="himagens">
+                <header>
+                    <h3>Hiperligações em imagens</h3>
+                </header>
+                <pre><code>
+<b>código</b>
+&lt;a href="https://developer.mozilla.org/en-US/" target="_blank">&lt;img src="html5-logo.webp" alt="logo"></a>
+
+                </code></pre>
+
+                <div class="output">
+                    <a href="https://developer.mozilla.org/en-US/" target="_blank"><img src="html5-logo.webp" alt="logo" width="200px"></a>
+                </div>
+
+            </article>
+        </section>
+    </main>
+
+    <aside>
+        <h2>Hiperligações</h2>
+        <div class="menu">
+            <a href="#saltos">Internas à página</a>
+            <a href="#internas">Internas ao website</a>
+            <a href="#externas">Externas</a>
+            <a href="#himagens">Em Imagens</a>
+        </div>
+    </aside>
+    <footer id="rodape">
+        <p>Criado por: Fernão Gravato</p>
+        <p>Contacto: <a href="mailto: gravato.f@gmail.com">gravato.f@gmail.com</a></p>
+    </footer>
+</body>
+</html>

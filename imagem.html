@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Img/áudio/vídeo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+    .output{
+        background-color: #dee3d3;
+        border: 1px solid #ccc;
+        padding: 15px;
+        overflow-x: auto;
+    }
+</style>
+<body>
+    <header class="banner">
+        <h1>Sistemas de Informação</h1>
+        <p>Aprender HTML (HyperText Markup Language)</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="htmlbasico.html">HTML <small>texto</small></a></li>
+            <li><a href="imagem.html">HTML <small>imagem</small></a></li>
+            <li><a href="hiperligacoes.html">HTML <small>hiperligações</small></a></li>
+        </ul>
+    </nav>
+    <main>
+        <!--Inserir imagem-->
+        <section id="imagem">
+            <h2>Inserir imagem</h2>
+            <article>
+                <pre><code>
+<b>código</b>
+&lt;img src="esas_edificio.jpeg" alt="Escola Sede" width="100%">
+                </code></pre>
+
+                <div class="output">
+                    <img src="esas_edificio.jpeg" alt="Escola Sede" width="100%">
+                </div>
+
+            </article>
+        </section>
+
+        <!--Inserir vídeo-->
+        <section id="video">
+            <h2>Inserir Vídeo</h2>
+            </h1>
+            <article>
+                <pre><code>
+<b>código</b>
+&lt;video controls autoplay muted loop width="640" height="360">
+    &lt;source src="video_360p60_25fps.mp4" type="video/mp4">
+&lt;/video>
+                </code></pre>
+
+                <div class="output">
+                    <video controls autoplay muted loop width="640" height="360">
+                        <source src="video_360p60_25fps.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+            </article>
+        </section>
+
+        <!--Inserir Áudio-->
+        <section id="audio">
+            <h2>Inserir Áudio</h2>
+            </h1>
+            <article>
+                <pre><code>
+<b>código</b>
+&lt;audio controls autoplay>
+    &lt;source src="TillParadiso-New Ideas.mp3" type="audio/mpeg">
+&lt;/audio>
+                </code></pre>
+
+                <div class="output">
+                    <audio controls autoplay>
+                        <source src="TillParadiso-New Ideas.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+
+            </article>
+        </section>
+
+
+    </main>
+    <aside>
+        <h2>Temas</h2>
+        <div class="menu">
+            <a href="#imagem">Imagem</a>
+            <a href="#video">Vídeo</a>
+            <a href="#audio">Áudio</a>
+        </div>
+    </aside>
+    <footer>
+        <p>Criado por: Fernão Gravato</p>
+        <p>Contacto: <a href="mailto: gravato.f@gmail.com">gravato.f@gmail.com</a></p>
+    </footer>
+</body>
+</html>

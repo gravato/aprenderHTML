@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprender HTML</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+ 
+  </style>
+<body>
+    <header class="banner">
+        <h1>Sistemas de Informação</h1>
+        <p>Tecnologias de desenvolvimento Web</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="htmlbasico.html">HTML <small>texto</small></a></li>
+            <li><a href="imagem.html">HTML <small>imagem</small></a></li>
+            <li><a href="hiperligacoes.html">HTML <small>hiperligações</small></a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="html">
+            <h2>HTML (HyperText Markup Language)</h2>
+            <article>
+                <p>O HTML (HyperText Markup Language) é a linguagem de marcação usada para 
+                    estruturar e organizar o conteúdo das páginas web. É fundamental para o 
+                    desenvolvimento de sites e aplicações na web, pois permite definir a estrutura de
+                    um documento, a colocação de textos, imagens, links, tabelas, formulários e outros. <br>  
+                    Esta linguagem é interpretada pelo browser, o que significa que podemos vizualizar 
+                    o resultado do código, abrindo apenas o ficheiro num navegador da nossa preferência.
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h3>Estrutura do código <HTML:xml></HTML:xml></h3>
+                </header>
+                <pre><code>
+&lt!DOCTYPE html&gt
+    &lthtml lang="pt">
+    &lthead>
+        &ltmeta charset="UTF-8">
+        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+        &lttitle>Título da Página&lt/title>
+    &lt/head>
+
+    &ltbody>
+    &lt!-- Conteúdo visível da página -->
+        &lth1>Bem-vindo ao meu site!&lt/h1>
+        &ltp>Este é um parágrafo de exemplo.&lt/p>
+    &lt/body>
+&lt/html>
+                </code></pre>
+            </article>
+        </section>
+
+        <!--Secção CSS-->
+
+        <section id="css">
+            <h2>CSS - Cascade Style Sheets</h2>
+            <article>
+                <p>O CSS (Cascading Style Sheets) é uma linguagem 
+                    utilizada para definir a apresentação de documentos HTML. <br>
+                    Enquanto o HTML define a estrutura e o conteúdo de uma página web, o CSS define 
+                    como esses elementos serão exibidos, incluindo cores, fontes, tamanhos, 
+                    posicionamento e animações.</p>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Exemplo CSS Inline (como atributo da tag HTML)</h3>
+                </header>
+                <pre><code>
+&lt;p style="color: red;">Este texto está vermelho.&lt;/p>        
+                </code></pre>
+                <header>
+                    <h3>Exemplo CSS Interno (dentro do àrea HEAD da página)</h3>
+                </header>
+                <pre><code>
+&lt;!--Altera para verde, a cor do texto dos elementos h1-->
+
+&lt;head>
+    &lt;style>
+        h1 {
+            color: green;
+        }
+    &lt;/style>
+&lt;/head>       
+                </code></pre>
+
+                <header>
+                    <h3>Exemplo CSS externo (escrito num ficheiro .css externo)</h3>
+                </header>
+
+                <!--Apresentação de código não interpretado-->
+                <pre><code>
+<span><b>html</b></span>
+
+&lt;link rel="stylesheet" href="styles.css">  
+
+<span><b>ficheiro .css</b></span>
+
+body {
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+}
+                </code></pre>
+                <!--Fim do código não interpretado-->
+            </article>
+        </section>
+
+        <!--Seção Javascript-->
+        <section id="javascript">
+            <h2>JavaScript</h2>
+            <article>
+                <p>O JavaScript é uma linguagem de programação essencial para desenvolvimento web. 
+                    É usada para tornar páginas da web interativas, manipular elementos 
+                    HTML e CSS. Pode tmabém, ser utilizada para desenvolver aplicações complexas do 
+                    lado do servidor usando Node.js.</p>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Exemplo de uma estrutura condicional</h3>
+                </header>
+
+                <pre><code>
+&lt;script>
+let hora = 15;
+
+if (hora < 12) {
+    console.log("Bom dia!");
+    } else if (hora < 18) {
+        console.log("Boa tarde!");
+    } else {
+         console.log("Boa noite!");
+    }    
+&lt;/script>                  
+                </code></pre>
+            </article>
+        </section> 
+    </main>
+
+    <aside>
+        <h2>Temas</h2>
+        <div class="menu">
+            <a href="#html">HTML</a>
+            <a href="#css">CSS</a>
+            <a href="#javascript">JavaScript</a>
+        </div>
+    </aside>
+    <footer>
+        <p>Criado por: Fernão Gravato</p>
+        <p>Contacto: <a href="mailto: gravato.f@gmail.com">gravato.f@gmail.com</a></p>
+    </footer>
+</body>
+</html>
